@@ -260,38 +260,41 @@ cp cernrep/*.sty .
 
 INSTALL JAVA SDK 8.101
 ----------------------
+```
 mkdir $HOME
 cd $HOME
-
+```
 Go to 
+```
 http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 and download the file 
 jdk-8u101-linux-x64.tar.gz
 tar xvfz jdk-8u101-linux-x64.tar.gz
 mv jdk1.8.0_101 1.8.0_101
-
+```
 
 edit .bashrc and add
+```
 export PATH=$PATH:$HOME/JDK/1.8.0_101/bin:$HOME/JDK/1.8.0_101/include
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/JDK/1.8.0_101/lib
-
+```
 
 
 INSTALL ANDROID STUDIO
 ----------------------
-
+```
 sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6 
-
 cd $HOME
 mkdir ANDROID-STUDIO
 cd ANDROID-STUDIO
 wget https://dl.google.com/dl/android/studio/ide-zips/2.1.2.0/android-studio-ide-143.2915827-linux.zip
 unzip android-studio-ide-143.2915827-linux.zip
 mv android-studio-ide-143.2915827-linux 143.2915827
-
+```
 edit .bashrc and add
+```
 export PATH=$PATH:$HOME/ANDROID-STUDIO/143.2915827/bin
-
+```
 studio.sh
 
 and follow instructions.
@@ -299,7 +302,7 @@ and follow instructions.
 
 INSTALL NODEJS
 --------------
-
+```
 cd $HOME
 mkdir NODEJS
 cd NODEJS
@@ -311,15 +314,17 @@ mkdir install
 ./configure --prefix=$HOME/NODEJS/4.4.7/install
 make -j4
 make install
-
+```
 edit .bashrc and add
+```
 export PATH=$PATH:$HOME/NODEJS/4.4.7/install/bin
-
+```
 
 INSTALL APACHE, MYSQL, PHP SERVER
 ---------------------------------
-
+```
 sudo apt-get install apache2
 sudo apt-get install mysql-server php-mysql
 sudo apt-get install php libapache2-mod-php php-mcrypt
+```
 
