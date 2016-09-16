@@ -201,6 +201,7 @@ export PATH=$PATH:$HOME/GATE/gate_v7.2-install/bin
 
 INSTALL FORM
 ------------
+```
 sudo apt-get install autoconf
 sudo apt-get install libgmp-dev zlib1g-dev
 mkdir FORM
@@ -211,7 +212,7 @@ autoreconf -i
 make
 make install
 sudo cp $HOME/FORM/form-install/bin/form /usr/local/bin/form
-
+```
 
 
 INSTALL MAGNETOCOSMICS
