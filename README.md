@@ -4,9 +4,11 @@ UBUNTU MATE 16.04 ARCH=64.
 
 INSTALL CLHEP
 -------------
+```
 sudo apt-get install cmake cmake-curses-gui
 sudo apt-get install git dpkg-dev make g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev
-
+```
+```
 cd $HOME
 mkdir CLHEP
 cd CLHEP
@@ -18,16 +20,17 @@ cmake -DCMAKE_INSTALL_PREFIX=$HOME/CLHEP/2.3.1.1-install $HOME/CLHEP/2.3.1.1/CLH
 make -j4
 make test
 make install
-
+```
 edit .bashrc and add
+```
 export PATH=$PATH:$HOME/2.3.1.1-install/bin:$HOME/2.3.1.1-install/include
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/CLHEP/2.3.1.1-install/lib
-
+```
 
 
 INSTALL PYTHIA8
 ---------------
-
+```
 cd $HOME
 mkdir PYTHIA8
 cd PYTHIA8
@@ -36,12 +39,13 @@ tar xvfz pythia8219.tgz
 cd pythia8219
 ./configure
 make -j4
-
+```
 edit .bashrc and add
 ....................
+```
 export PYTHIA8DATA=$HOME/PYTHIA8/pythia8219/share/Pythia8/xmldoc
 export PYTHIA=$HOME/PYTHIA8/pythia8219/lib
-
+```
 
 
 INSTALL ROOT 5.34.36
